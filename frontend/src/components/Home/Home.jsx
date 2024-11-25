@@ -4,10 +4,10 @@ import MultiItemCarrousel from "./MultiItem";
 import RestaurantCard from "../Restaurant/RestaurantCard";
 
 const Home = () => {
-  const restaurant = [1, 1, 1, 1];
+  const restaurant = [1, 1, 1, 1, 1, 1];
 
   return (
-    <div className="">
+    <div className="pb-10">
       <section className="banner -z-50 relative flex flex-col justify-center items-center">
         <div className="w-[100vw] z-10 text-center  text-[#fff]">
           <p className="text-4xl lg:text-5xl font-bold z-10 py-5">

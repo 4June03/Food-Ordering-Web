@@ -6,7 +6,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 const RestaurantCard = () => {
   return (
     <>
-      <div className="pt-6">
+      <div className="pt-6 shadow-lg">
         <Card style={{ width: "19rem" }}>
           <div className="relative">
             <Card.Img

@@ -7,7 +7,7 @@ import { MdOutlineFastfood } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="px-5 z-50 py-3 hover:bg-[#31373d] lg:px-20 flex justify-between bg-transparent fixed w-full">
+    <div className="px-5 z-50 py-3 bg-[#31373d] lg:px-20 flex justify-between sticky top-0 w-full">
       <div className="lg:mr-10 cursor-pointer flex items-center">
         <li className="logo font-semibold text-gray-300 text-2xl list-none flex items-center content-center">
           <MdOutlineFastfood className="mr-2" />

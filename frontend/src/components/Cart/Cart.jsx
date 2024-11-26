@@ -3,7 +3,7 @@ import {
   Button,
   Card,
   Divider,
-  Grid2,
+  Grid,
   Modal,
   TextField,
 } from "@mui/material";
@@ -81,7 +81,7 @@ const Cart = () => {
               </div>
               <Divider />
             </div>
-            <div className="pt-3 flex justify-between font-semibold">
+            <div className="pt-3 pb-8 flex justify-between font-semibold">
               <p>Total</p>
               <p>$4000</p>
             </div>
@@ -128,13 +128,57 @@ const Cart = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <p id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </p>
-          <p id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </p>
+        <Box sx={style} initialValues={initialValues} onSubmit={handleSubmit}>
+          <Formik>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Field
+                  as={TextField}
+                  name="streetAddress"
+                  label="Street Address"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Field
+                  as={TextField}
+                  name="state"
+                  label="State"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Field
+                  as={TextField}
+                  name="pincode"
+                  label="Pincode"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Field
+                  as={TextField}
+                  name="city"
+                  label="City"
+                  fullWidth
+                  variant="outlined"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  fullWidth
+                >
+                  Deliver here
+                </Button>
+              </Grid>
+            </Grid>
+          </Formik>
         </Box>
       </Modal>
     </>

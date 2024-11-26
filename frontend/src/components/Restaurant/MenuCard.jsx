@@ -53,6 +53,7 @@ const MenuCard = () => {
               <img
                 className="w-[7rem] h-[7rem] object-cover"
                 src="https://cdn.24h.com.vn/upload/1-2021/images/2021-01-31/Thuc-hu-tin-don-nu-hoang-phim-18--lo-bang-gia-di-dem-voi-gia-beo-bot-500tr-dem-yui-hatano-3-1612060380-520-width660height568.jpg"
+                alt="anh3"
               ></img>
             </div>
 

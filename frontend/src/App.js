@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import RestaurantDetail from "./components/Restaurant/RestaurantDetail";
+import CartItem from "./components/Cart/CartItem";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <section></section>
       <Navbar></Navbar>
       {/* <Home></Home> */}
-      <RestaurantDetail />
+      {/* <RestaurantDetail /> */}
+      <Cart />
     </div>
   );
 }

@@ -6,16 +6,18 @@ import RestaurantDetail from "./components/Restaurant/RestaurantDetail";
 import CartItem from "./components/Cart/CartItem";
 import Cart from "./components/Cart/Cart";
 import Profile from "./components/Profile/Profile";
+import CustomerRoute from "./Routers/CustomerRoute";
 
 function App() {
   return (
     <div className="Ap">
       <section></section>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       {/* <Home></Home> */}
       {/* <RestaurantDetail /> */}
-      <Profile />
+      {/* <Profile /> */}
       {/* <Cart /> */}
+      <CustomerRoute />
     </div>
   );
 }
